@@ -1,0 +1,13 @@
+
+<h1><%= @my_pet.name() %></h1>
+
+<h4>Food Level: <%= @my_pet.food_level() %></h4>
+<h4>Sleep Level: <%= @my_pet.sleep_level() %></h4>
+<h4>Activity Level: <%= @my_pet.activity_level() %></h4>
+<% @my_pet.time_passes() %>
+
+
+
+<button type="button" class="btn btn-primary" id="feed" onclick="<% @my_pet.feed() %>">Feed</button>
+<button type="button" class="btn btn-secondary" id="sleep" onclick="<% @my_pet.put_to_sleep() %>">Sleep</button>
+<button type="button" class="btn btn-success" id="play" onclick="<% @my_pet.play() %>">play</button>
